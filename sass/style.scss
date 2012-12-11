@@ -226,6 +226,11 @@ h3{
   @include box-shadow(rgba(255,255,255,1) 1px 1px 0);
   background:#FFF;
   padding:20px;
+  .point {
+    margin-top: 20px;
+    color:#C00;
+    font-weight: bold;
+  }
 }
 .features li a{
   display:block;
@@ -745,4 +750,7 @@ input[type="submit"]:hover{
 }
 .pict-box2{
   padding:5px 10px;
+}
+.small {
+  font-size: 12px;
 }

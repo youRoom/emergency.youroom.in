@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>youRoom エマージェンシー</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="http://ja.youroom.in/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+	<script src="/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/heightLine.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/jquery.page-scroller-308.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			var nav = $('.nav');
+			var navTop = nav.offset().top;
+			$(window).scroll(function () {
+				var winTop = $(this).scrollTop();
+				if (winTop >= navTop) {
+					nav.addClass('fixed')
+				} else if (winTop <= navTop) {
+					nav.removeClass('fixed')
+				}
+			});
+		});
+	</script>
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	</script>
+</head>
+<body>
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=177651085648087";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+  <div class="content">
+
+		<section class="section" id="contact">
+			<h2>お問い合わせ</h2>
+			<div class="cont-box">
+				<div class="contact">
+					<p class="sentence">youRoomエマージェンシーに関するお問い合わせは下記のフォームよりお願いいたします。</p>
+					<p class="red caution">*は必須項目です</p>
+					<form action="https://docs.google.com/a/sonicgarden.jp/spreadsheet/formResponse?formkey=dFlnQlZUZTc0UXVtVnFIbWFGYjJsUXc6MQ&amp;embedded=true&amp;ifq"; method="POST" id="ss-form">
+						<label for="entry_0">お問い合せ内容<span class="red">※</span></label>
+						<br> 
+						<textarea name="entry.0.single" rows="8" cols="75" id="entry_0"></textarea>
+						<br> 
+						<label for="entry_1">会社名<span class="red">※</span></label>
+						<br> 
+						<input type="text" name="entry.1.single" value="" id="entry_1">
+						<br> 
+						<label for="entry_2">部署名<span class="red">※</span></label>
+						<br> 
+						<input type="text" name="entry.2.single" value="" id="entry_2">
+						<br> 
+						<label for="entry_3">お名前<span class="red">※</span></label>
+						<br> 
+						<input type="text" name="entry.3.single" value="" id="entry_3">
+						<br> 
+						<label for="entry_4">メールアドレス<span class="red">※</span></label>
+						<br> 
+						<input type="text" name="entry.4.single" value="" id="entry_4">
+						<br> 
+						<label for="entry_5">お電話番号</label>
+						<br> 
+						<input type="text" name="entry.5.single" value="" id="entry_5">
+						<br>
+						<input type="hidden" name="pageNumber" value="0">
+						<input type="hidden" name="backupCache" value="">
+						<input type="submit" name="submit" value="送信">
+					</form>
+				</div>
+			</div>
+		</section><!-- #contact -->
+
+
+  </div>
+</div>
